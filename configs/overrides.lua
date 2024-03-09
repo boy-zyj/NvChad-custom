@@ -52,6 +52,13 @@ M.nvimtree = {
     enable = true,
   },
 
+  view = {
+    adaptive_size = true,
+    width = {
+      max = 60,
+    },
+  },
+
   renderer = {
     highlight_git = true,
     icons = {
@@ -63,11 +70,15 @@ M.nvimtree = {
 }
 
 M.telescope = {
+  defaults = {
+    file_ignore_patterns = { "node_modules" },
+  },
 
   extensions = {
     project = {
       base_dirs = {
-        {'~/Documents/github', max_depth = 4},
+        {"~/Documents/work", max_depth = 3},
+        {"~/Documents/github", max_depth = 3},
       },
       hidden_files = true, -- default: false
       theme = "dropdown",
