@@ -67,6 +67,12 @@ M.nvimtree = {
       },
     },
   },
+
+  actions = {
+    open_file = {
+      quit_on_open = true,
+    },
+  },
 }
 
 M.telescope = {
