@@ -55,7 +55,7 @@ M.nvimtree = {
   view = {
     adaptive_size = true,
     width = {
-      max = 60,
+      max = 40,
     },
   },
 
